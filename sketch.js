@@ -59,7 +59,11 @@ function draw() {
   playerArcher.display();
   arrow.display();
 
-
+  for (var i = 0; i < playerArrows.length; i++) {
+    if (playerArrows[i] !== undefined) {
+      playerArrows[i].display();
+    }
+  }
 
  /* if (keyCode === 32) {
     arrow.shoot(playerArcher.body.angle);
